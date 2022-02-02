@@ -93,7 +93,7 @@ function fetchCategory(){
          <p class="card-text">${article.author}</p>
          <p class="card-text">${article.content}</p>
          </div>
-         <a href="${article.url}" class="btn btn-primary" target="_blank">Further more</a>
+         <a href="${article.url}" class="btn btn-primary mt-3" target="_blank">Further more</a>
        </div>
      </div>
    </div>
@@ -115,7 +115,7 @@ fetch(nurl)
        res.json().then(data=>{
         console.log(data.articles,"news",data.articles.length)
         let temp =  data.articles.map(article=> ` 
-        <div class="col-md-6 my-2">
+        <div class="col-md-4 my-2">
      <div class="card" >
        <img src="${article.urlToImage}" class="card-img-top " style="height:200px" alt="...">
        <div class="card-body">
@@ -124,7 +124,7 @@ fetch(nurl)
          <p class="card-text">${article.author}</p>
          <p class="card-text">${article.content}</p>
          </div>
-         <a href="${article.url}" class="btn btn-primary" target="_blank">Further more</a>
+         <a href="${article.url}" class="btn btn-primary mt-3" target="_blank">Read more</a>
        </div>
      </div>
    </div>
